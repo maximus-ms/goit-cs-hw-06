@@ -87,15 +87,13 @@ def save_to_db(data):
         return
     logging.info(f"MONGODB to write: {data_dict}")
     try:
-        # client = MongoClient(URI_DB, server_api=ServerApi('1'))
-        # db = client.mds02cs_hw_06
-        # db.messages.insert_one(data_dict)
-        pass
+        client = MongoClient(URI_DB, server_api=ServerApi("1"))
+        db = client.mds02cs_hw_06
+        db.messages.insert_one(data_dict)
     except Exception as e:
         logging.error(e)
     finally:
-        # client.close()
-        pass
+        client.close()
 
 
 def run_socket():

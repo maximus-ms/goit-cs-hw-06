@@ -38,3 +38,6 @@ Following the example in the course slides, create a web application with routin
 
 The key `"date"` of each message — is the time of receiving the message: `datetime.now()`. So each new message from web-app should write to the database with the time of receiving.
 
+### Solution
+
+All code is in file `main.py`. HTTP server is running on port `3000`, Socket server on port `5000` and MongoDB on port `27017`. Everything is collected in Docker compose. MongoDB data is stored in volume `mongodata`.

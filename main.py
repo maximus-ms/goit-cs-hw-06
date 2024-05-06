@@ -10,7 +10,7 @@ from pymongo.server_api import ServerApi
 from multiprocessing import Process
 
 HTTP_PORT = 3000
-SOCKET_PORT = 5001
+SOCKET_PORT = 5000
 SERVER_ADDR = socket.gethostbyname(socket.gethostname())
 SOCKET_CHUNK_SIZE = 1024
 
